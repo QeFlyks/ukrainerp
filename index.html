@@ -29,15 +29,52 @@
    <div class="three">
      <img src="three.png">
    </div>
+   <div class="backgroundwhite">
+     <img src="backwhite.png">
+   </div>
+   <div class="backgroundblue">
+     <img src="backblue.png">
+   </div>
+   <div class="imine">
+     <img src="imine.png">
+   </div>
+   <div class="imine2">
+     <img src="imine2.png">
+   </div>
+   <div class="prie">
+     <h1>ПРИЄДНЮЙСЯ!</h1>
+   </div>
+   <div class="bablack"></div>
+   <div class="pried">
+     <h1>PLAY.UKRAINEERP.FUN</h1>
+   </div>
+   <div class="polosa">
+     <img src="polosa.png">
+   </div>
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;0,600;0,800;1,400&display=swap" rel="stylesheet">
+
 <style>
   body {
     width: 1512px;
     height: 7326px;
 
     background: #E8E8E8;
+  }
+  .copy_link_mess{
+    line-height:40px;
+    border-radius:5px;
+    background:#1DA1F2;
+    color:#fff;
+    position:fixed;
+    padding:0 15px;
+    z-index:99;
+    bottom:30px;
+    left:50%;
+    margin-left:-120px;
+    display:none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 15px;
   }
   .one {
     width: 166px;
@@ -182,22 +219,90 @@
     box-shadow: 0px 4px 100px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
   .three {
-    top: -607px;
-    left: 40px;
+    top: -1045px;
+    left: 900px;
     position: relative;
     z-index: 2;
 
-    width: 601px;
-    height: 678px;
-    flex-shrink: 0;
-
-    border-radius: 4px;
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
-    background-blend-mode: luminosity;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
+ .backgroundwhite {
+   top: -1085px;
+   left: 850px;
+   position: relative;
+   z-index: 3;
+   width: 530px;
+   height: 290px;
+   flex-shrink: 0;
 
+   border-radius: 20px;
+   border: 30px solid #E8E8E8;
+   background: #E8E8E8;
+ }
+ .backgroundblue {
+   top: -1485px;
+   left: 850px;
+   position: relative;
+   z-index: 3;
+   width: 530px;
+   height: 290px;
+   flex-shrink: 0;
+
+   border-radius: 20px;
+   border: 30px solid #E8E8E8;
+   background: #E8E8E8;
+ }
+ .imine {
+   top: -1755px;
+   left: 900px;
+   position: relative;
+   z-index: 3;
+ }
+ .imine2 {
+   top: -1870px;
+   left: 945px;
+   position: relative;
+   z-index: 3;
+ }
+ .prie {
+   color: #000;
+   font-family: Raleway;
+   font-size: 13px;
+   font-style: normal;
+   font-weight: bolder;
+   line-height: normal;
+
+   top: -1965px;
+   left: 1095px;
+   position: relative;
+   z-index: 3;
+ }
+ .bablack {
+   top: -1970px;
+   left: 1085px;
+   position: relative;
+   z-index: 3;
+   width: 219px;
+   height: 31px;
+   flex-shrink: 0;
+   border-radius: 6px;
+   border: 1px solid #000000;
+   background: rgba(217, 217, 217, 0.00);
+ }
+ .pried {
+   top: -2009px;
+   left: 1095px;
+   position: relative;
+   z-index: 3;
+
+   color: #000;
+   font-family: Raleway;
+   font-size: 9px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: normal;
+ }
 </style>
+
 <script>
 
   function scrollTo(element) {
@@ -214,6 +319,7 @@
   button.addEventListener('click', () => {
     scrollTo(footer);
   })
+
 
 </script>
 </body>
