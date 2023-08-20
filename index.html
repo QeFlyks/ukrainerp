@@ -611,5 +611,92 @@ SmoothScroll({
 
 
 </script>
+<meta name="interkassa-verification" content="07cee7da716a0d2628018356d590a487" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.slidecontainer {
+    width: 3%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 509px;
+    height: 15px;
+    border-radius: 5px;
+    background-image: linear-gradient(
+    to bottom,
+    RGBA(0,255,140,0.92),
+    RGBA(158,255,140,0.92)
+  ), url("one.png");
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 255, 0.5),
+    rgba(255, 255, 0, 0.5)
+  ), url("one.png");
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 0, 0.5),
+    rgba(0, 0, 255, 0.5)
+  ), url("one.png");
+    cursor: pointer;
+}
+.igrv {
+  width: 306px;
+  height: 37px;
+  flex-shrink: 0;
+
+  color: #747474;
+  font-family: Raleway;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  z-index: 3;
+}
+</style>
+</head>
+<body>
+<div class="igrv">
+  <h1>ІГРОВА ВАЛЮТА</h1>
+</div>
+
+<div class="""slidecontainer">
+  <input type="range" min="1" max="1000" value="1" class="slider" id="myRange">
+  <p>ЦІНА <span id="demo"></span></p>
+</div>
+
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
 </body>
 </html>
