@@ -103,11 +103,11 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,500;0,600;0,800;1,400&display=swap" rel="stylesheet">
-
+   <meta name="viewport" content="width=960px, initial-scale=1.0">
 <style>
   body {
-    width: 1512px;
-    height: 7326px;
+    max-width: 1366px;
+    min-width: 960px;
 
     background: #E8E8E8;
   }
@@ -611,6 +611,7 @@ SmoothScroll({
 
 
 </script>
+<link rel="stylesheet" href="style.css">
 <meta name="interkassa-verification" content="07cee7da716a0d2628018356d590a487" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -696,6 +697,29 @@ output.innerHTML = slider.value;
 
 slider.oninput = function() {
   output.innerHTML = this.value;
+}
+
+window.addEventListener("resize", AutoScale); //Масштабируем страницу при растягивании окна
+
+AutoScale(); //Масштабируем страницу после загрузки
+
+function AutoScale()
+{
+    let width = window.innerWidth; //Ширина окна
+    //Если вы хотите проверять по размеру экрана, то вам нужно свойство window.screen.width
+
+    if(width > 1280)
+    {
+   	 ChangeScale("big");
+    }
+    else if(width <= 1280 && width > 720)
+    {
+   	 ChangeScale("normal");
+    }
+    else if(width < 720)
+    {
+   	 ChangeScale("small");
+    }
 }
 </script>
 </body>
